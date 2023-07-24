@@ -1,0 +1,56 @@
+
+:root{
+    --myspace: 1rem;
+}
+body{
+    background-color:aliceblue ;
+}
+.col1{
+    width:5%;
+}
+
+.col2{
+    text-shadow: 3px 4px 2px white;
+    width: 30%;
+    color:darkgreen;
+    text-align: left;
+}
+
+.subject{
+    background-color:aquamarine  ;
+}
+
+ul.menu{
+    list-style-type: none;
+    margin:0;
+    background-color: lightgrey;
+    display: flex;
+    padding: 0;
+}
+
+ul.menu>li{
+    padding: var(--myspace);
+    border-left:1px solid white;
+    min-width: 10%;
+    text-align: center;
+}
+
+ul.menu>li:first-child{
+    border-left: none;
+}
+
+ul.menu>li:last-child{
+    margin-left: auto;
+}
+
+.menuvieclam>li{
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.menuvieclam>li:hover{
+    background-color: #0000FF ;
+    color: white;
+}

@@ -1,56 +1,232 @@
-
+body{
+    background-color: aliceblue;
+}
+tr{
+    background-color: aqua;
+}
 :root{
     --myspace: 1rem;
-}
-body{
-    background-color:aliceblue ;
-}
-.col1{
-    width:5%;
-}
-
-.col2{
-    text-shadow: 3px 4px 2px white;
-    width: 30%;
-    color:darkgreen;
-    text-align: left;
-}
-
-.subject{
-    background-color:aquamarine  ;
 }
 
 ul.menu{
     list-style-type: none;
-    margin:0;
-    background-color: lightgrey;
-    display: flex;
     padding: 0;
+    margin: 0;
 }
 
-ul.menu>li{
-    padding: var(--myspace);
-    border-left:1px solid white;
-    min-width: 10%;
-    text-align: center;
+.menu{
+    border-radius: 10px;
+    display: flex;
 }
 
-ul.menu>li:first-child{
-    border-left: none;
-}
-
-ul.menu>li:last-child{
-    margin-left: auto;
-}
-
-.menuvieclam>li{
+ul.menu>li>a{
     display: block;
     padding: 1rem;
     text-decoration: none;
-    list-style-type: none;
 }
 
-.menuvieclam>li:hover{
+ul.menu>li>a:hover{
     background-color: #0000FF ;
     color: white;
+}
+
+.sub:hover .submenu{
+    display: block !important;
+    background-color: aqua;
+}
+
+.submenu{
+    display: none !important;
+    position: absolute;
+    min-width: 10%;
+}
+
+.submenu>li{
+    border-left: none !important;
+}
+
+.dropdown{
+    text-align: center;
+    border: none;
+}
+
+section {
+    display: block;
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+.tv-search {
+    padding-top: 85px;
+    padding-bottom: 40px;
+    background-size: cover
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div {
+    display: block;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.tv-content .border_rf {
+    background: #ffffff5e;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 0.7rem 0.5rem 0.2rem 0.6rem;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+.form-row>.col, .form-row>[class*=col-] {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-md-1, .col-md-2, .col-md-3, .col-md-4{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+}
+
+.tv-content .find-jobs-search, .tv-search .has-select, .tv-search .has-btn {
+    position: relative;
+}
+
+.tv-content .find-jobs-search:before {
+    content: '\f002';
+    position: absolute;
+    font-family: "font awesome 5 pro";
+    font-weight: 700;
+    font-size: .9375rem;
+    color: #888;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1.3125rem;
+}
+
+.tv-content .find-jobs-search .form-control {
+    border-radius: 999px;
+    background: #fff;
+    border: 0.125rem solid #a8a8a8;
+    font-size: .9375rem;
+    padding: 1.0625rem 2.5rem;
+    height: 3rem;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    line-height: 16px;
+    color: #495057;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+button, input {
+    overflow: visible;
+}
+
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+#home-search .has-select i {
+    left: 16px!important;
+    line-height: 50px!important;
+    top: 0!important;
+}
+
+.has-select i {
+    position: absolute;
+    z-index: 999;
+    font-size: 16px;
+    color: rgba(25,25,25,.7);
+}
+
+.fa, .fas {
+    font-family: "font awesome 5 pro";
+    font-weight: 900;
+}
+
+.fa, .fas { 
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+}
+
+.fa-briefcase:before {
+    content: "\f0b1";
+}
+
+.select2-hidden-accessible {
+    border: 0!important;
+    clip: rect(0 0 0 0)!important;
+    clip-path: inset(50%)!important;
+    height: 1px!important;
+    overflow: hidden!important;
+    padding: 0!important;
+    position: absolute!important;
+    width: 1px!important;
+    white-space: nowrap!important;
+    background: 0 0;
+}
+
+button, select {
+    text-transform: none;
+}
+
+.fa-map-marker-alt:before {
+    content: "\f3c5";
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.tv-content .btn-com01 {
+    font-size: .9375rem;
+    padding: 0;
+    width: 100%;
+    border-radius: 999px;
+    height: 3rem;
+}
+.btn-success {
+    background-color: #0091ce;
+    border-color: #0091ce;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    line-height: 1.5;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }

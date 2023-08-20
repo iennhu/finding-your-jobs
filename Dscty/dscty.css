@@ -1,3 +1,57 @@
-table{
-    text-align: center;
+.allpage{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.company-header .title {
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.company-header {
+    padding: 24px 0;
+    text-align: center !important;
+}
+.title {
+    color: #333;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.listcompanies{
+    display: flex;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    flex-wrap: wrap;
+    margin-left: calc(var(--bs-gutter-x)*-.5);
+    margin-right: calc(var(--bs-gutter-x)*-.5);
+    margin-top: calc(var(--bs-gutter-y)*-1);
+}
+.listcompany{
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+.box-company{
+    background: #fff 0 0 no-repeat padding-box;
+    border-radius: 5px;
+    box-shadow: -1px 1px 4px rgba(0,0,0,.051);
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+}
+.pic img{
+    width: 100%;
+}
+.company-name {
+    color: #333;
+    font: normal normal 700 14px/20px Inter,sans-serif;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.company-description {
+    color: #555;
+    font-size: 14px;
+    letter-spacing: 0;
+    padding-top: 5px;
 }

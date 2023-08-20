@@ -1,0 +1,101 @@
+:root{
+    --myspace: 1rem;
+}
+.tieude{
+    display: flex;
+    background-color: pink;
+}
+.subject{
+    color:lightblue;
+    text-shadow: 0 0 3px grey;
+}
+.othertab{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    line-height: 24px;
+    padding: 12px 20px;
+}
+
+.dangnhap>a{
+    display: block;
+}
+
+.dangnhap{
+    text-align: center;
+    border: 2px solid lightblue;
+    border-radius: 10px;
+    background: white;
+    padding: 10px;
+}
+
+.dangnhap:hover{
+    background: lightblue;
+}
+
+ul.block{
+    list-style-type: none;
+    margin:0;
+    background-color: lightgrey;
+    display: flex;
+    padding: 0;
+}
+
+ul.block>li{
+    padding:1rem;
+    border-left:1px solid white;
+    min-width: 10%;
+    text-align: center;
+}
+
+ul.block>li>a{
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+ul.block>li>a:hover{
+    background-color: #0000FF ;
+    color: white;
+}
+.tab{
+    display: none !important;
+    position: absolute;
+    min-width: 10%;
+}
+
+.tab>li{
+    border-left: none !important;
+}
+
+.dangnhap:hover .tab{
+    display: block !important;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.otherthings{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.otherthing{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.otherthing img{
+    width: 100%;
+}
+
+.foot{
+    background-color: pink;
+    list-style-type: none;
+}
+
+
+
+

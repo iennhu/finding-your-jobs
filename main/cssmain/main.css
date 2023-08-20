@@ -3,7 +3,7 @@
 }
 .tieude{
     display: flex;
-    background-color: pink;
+    background-color: lightskyblue;
 }
 .subject{
     color:lightblue;
@@ -27,6 +27,7 @@
     border-radius: 10px;
     background: white;
     padding: 10px;
+    margin-right: 10px;
 }
 
 .dangnhap:hover{
@@ -72,6 +73,7 @@ ul.block>li>a:hover{
     display: block !important;
     background-color: aqua;
     border-radius: 10px;
+    margin-top: 10px;
 }
 
 .otherthings{
@@ -92,7 +94,7 @@ ul.block>li>a:hover{
 }
 
 .foot{
-    background-color: pink;
+    background-color: lightblue;
     list-style-type: none;
 }
 
